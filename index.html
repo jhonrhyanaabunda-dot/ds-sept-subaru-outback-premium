@@ -609,15 +609,15 @@
   /* Stats variant: short numeric headers, bigger type, centered, modest breakout */
   .spec-strip.stats {
     background: var(--white);
-    margin-left: -80px;
-    margin-right: -80px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .spec-strip.stats .item { align-items: center; text-align: center; padding: 28px 16px; }
   .spec-strip.stats .item:first-child { padding-left: 16px; }
   .spec-strip.stats .item:last-child { padding-right: 16px; }
   .spec-strip.stats .num { font-size: 44px; line-height: 1; min-height: 48px; margin-bottom: 24px; white-space: nowrap; }
   .spec-strip.stats .num small { font-size: 15px; letter-spacing: 0; margin-left: 4px; }
-  .spec-strip.stats .lbl { min-height: calc(11px * 1.5 * 5); display: flex; align-items: flex-start; justify-content: center; text-align: center; }
+  .spec-strip.stats .lbl { min-height: calc(11px * 1.5 * 2); display: flex; align-items: flex-start; justify-content: center; text-align: center; }
 
   /* ---------- Safety badge ---------- */
   .safety-banner {
@@ -1102,12 +1102,12 @@
   @media (max-width: 1280px) {
     main.wrap { max-width: var(--maxw); }
     .article-grid { grid-template-columns: 200px minmax(0, 1fr) 260px; gap: 48px 64px; }
-    .spec-strip.stats { margin-left: -64px; margin-right: -64px; }
+    .spec-strip.stats { margin-left: 0; margin-right: 0; }
   }
   @media (max-width: 1100px) {
     .article-grid { grid-template-columns: 200px minmax(0, 1fr); gap: 48px; }
     .gutter { display: none; }
-    .spec-strip.stats { margin-left: -48px; margin-right: 0; }
+    .spec-strip.stats { margin-left: 0; margin-right: 0; }
     .trust-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 0;
@@ -1551,10 +1551,10 @@
         <p class="lede">Drive both. The seat, the cabin noise, and the standard tech are easier to judge from the driver's seat than from a spec table. We are at <strong>2829 National City Blvd, National City, CA 91950</strong>, on the National City Mile of Cars, serving National City, Chula Vista, and San Diego County.</p>
 
         <div class="spec-strip stats">
-          <div class="item"><div class="num">4.7<small> ★</small></div><div class="lbl">Google rating across 4,437 reviews</div></div>
-          <div class="item"><div class="num">2<small> trims</small></div><div class="lbl">Premium &amp; Limited, walked side by side</div></div>
-          <div class="item"><div class="num">AWD</div><div class="lbl">Symmetrical all-wheel drive, standard on both</div></div>
-          <div class="item"><div class="num">Love</div><div class="lbl">Subaru Love Promise community commitment</div></div>
+          <div class="item"><div class="num">4.7<small> ★</small></div><div class="lbl">4,437 Google reviews</div></div>
+          <div class="item"><div class="num">2<small> trims</small></div><div class="lbl">Premium &amp; Limited side by side</div></div>
+          <div class="item"><div class="num">AWD</div><div class="lbl">Standard on both trims</div></div>
+          <div class="item"><div class="num">Love</div><div class="lbl">Subaru Love Promise</div></div>
         </div>
 
         <ol class="bullets">
