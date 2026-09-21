@@ -135,7 +135,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.7",
-        "reviewCount": 4460
+        "reviewCount": "4480"
       },
       "award": [
         "Subaru Love Promise community commitment"
@@ -388,12 +388,6 @@
     font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
     color: var(--blue-deep);
   }
-  .hero-photo.full-bleed .credit {
-    position: absolute;
-    bottom: 24px; right: clamp(20px, 4vw, 56px);
-    color: var(--white);
-    text-shadow: 0 1px 8px rgba(0,0,0,.45);
-  }
 
   /* ---------- Article body grid (sticky TOC + column) ---------- */
   .article-grid {
@@ -473,7 +467,7 @@
   .gutter .chip .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
   /* ---------- Section + typography ---------- */
-  section.s { scroll-margin-top: 32px; padding: 64px 0; border-top: 1px solid var(--rule); }
+  section.s { scroll-margin-top: 32px; padding: 52px 0; border-top: 1px solid var(--rule); }
   section.s:first-of-type { border-top: none; padding-top: 8px; }
   .section-num {
     display: flex; align-items: baseline; gap: 16px;
@@ -533,6 +527,7 @@
     letter-spacing: -0.005em;
     text-wrap: balance;
   }
+  blockquote.pull:last-child { margin-bottom: 0; border-bottom: none; }
   blockquote.pull cite {
     display: block;
     margin-top: 24px;
@@ -721,11 +716,12 @@
   }
   .cross-table table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     font-size: 14px;
   }
   .cross-table thead th {
-    text-align: center;
+    text-align: left;
     padding: 18px 16px;
     font-size: 11px;
     letter-spacing: 0.16em;
@@ -736,7 +732,6 @@
     background: var(--paper-2);
     vertical-align: top;
   }
-  .cross-table thead th:first-child { text-align: left; }
   .cross-table thead th .model {
     display: block;
     font-family: var(--display);
@@ -778,9 +773,10 @@
     text-transform: uppercase;
     color: var(--muted);
     font-weight: 600;
-    width: 22%;
+    width: 27%;
     background: var(--paper-2);
   }
+  .cross-table col.compare { width: 36.5%; }
   .cross-table tbody td {
     font-family: var(--display);
     font-size: 15px;
@@ -1271,13 +1267,13 @@
   <div class="wrap">
     <div class="eyebrow"><span class="pip"></span> New Vehicle Trim Guide · Dalton Subaru National City</div>
     <h1>Subaru Outback <em>Premium vs Limited</em>, compared.</h1>
-    <p class="deck">The choice comes down to comfort and tech tier. Premium is the value-focused mid trim with StarTex® upholstery and core driver tech; Limited adds leather-trimmed upholstery, more standard safety and convenience features, and a higher level of interior finish. Both ride on the same all-wheel-drive Outback platform, and this page lays out the practical differences the way our team walks shoppers through them on the lot at 2829 National City Blvd.</p>
+    <p class="deck">The choice comes down to comfort and tech tier. Premium is the value mid trim with StarTex® upholstery; Limited adds leather-trimmed seating and more standard content. Both ride on the same all-wheel-drive Outback platform.</p>
 
     <div class="hero-meta">
       <div class="item"><div class="lbl">Address</div><div class="val">2829 National City Blvd<small>National City, CA 91950</small></div></div>
       <div class="item"><div class="lbl">Sales Hours</div><div class="val">Mon-Sat 8:30-8<small>Sun 10-6</small></div></div>
       <div class="item"><div class="lbl">Contact</div><div class="val"><a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a><small>Mile of Cars · National City</small></div></div>
-      <div class="item"><div class="lbl">Reviews</div><div class="val"><a class="tel" href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener">4.7 ★ · 4,460</a><small>Google · Dalton Subaru</small></div></div>
+      <div class="item"><div class="lbl">Reviews</div><div class="val"><a class="tel" href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener">4.7 ★ · 4,480</a><small>Google · Dalton Subaru</small></div></div>
     </div>
   </div>
 
@@ -1289,7 +1285,6 @@
          fetchpriority="high"
          width="1920"
          height="1462" />
-    <span class="credit">DALTON SUBARU NATIONAL CITY · NEW VEHICLES</span>
     <figcaption class="visually-hidden">The 2026 Subaru Outback Premium and Limited trims at Dalton Subaru National City on the National City Mile of Cars, serving San Diego County.</figcaption>
   </figure>
 </header>
@@ -1321,7 +1316,7 @@
       <section class="s" id="short-answer">
         <div class="section-num"><span>01</span><span>From the showroom floor</span></div>
         <h2 class="section-h">Premium or Limited: <em>the short answer</em>.</h2>
-        <p class="lede">Pick <strong>Premium</strong> if you want the strongest dollar-for-feature value and you are fine with StarTex® upholstery and a simpler interior. Pick <strong>Limited</strong> if you want leather-trimmed seating, more standard convenience and safety content, and a quieter, more finished cabin. Neither changes the core all-wheel-drive Outback character.</p>
+        <p class="lede">Pick <strong>Premium</strong> for the strongest dollar-for-feature value with StarTex® upholstery. Pick <strong>Limited</strong> for leather-trimmed seating and a quieter, more finished cabin. Neither changes the core Outback character.</p>
 
         <p>Both trims share Subaru Symmetrical All-Wheel Drive as standard. Both include the EyeSight Driver Assist suite on current Outback models. The gap is content and finish, not capability.</p>
 
@@ -1337,11 +1332,11 @@
           </dl>
         </div>
 
-        <p>If you are cross-shopping the 2026 Subaru Outback Premium against the 2026 Subaru Outback Limited, the sections below lay out the practical differences the way our team walks shoppers through them on the lot. We sell and service Subaru at Dalton Subaru National City, 2829 National City Blvd, National City, CA 91950, and we see both trims move every month.</p>
+        <p>We sell and service Subaru at Dalton Subaru National City, 2829 National City Blvd, National City, CA 91950, and we see both trims move every month.</p>
 
         <p>For exact horsepower, fuel economy, towing, and current model-year equipment, confirm against the official source at <a href="https://www.subaru.com" rel="noopener">subaru.com</a> and the EPA ratings at <a href="https://www.fueleconomy.gov" rel="noopener">fueleconomy.gov</a>. We do not publish spec numbers we cannot verify against the manufacturer.</p>
 
-        <p style="font-size:12px; color:var(--muted); letter-spacing:0.02em; line-height:1.6; border-top:1px solid var(--rule-soft); padding-top:18px; margin-top:24px;"><strong style="color:var(--ink-soft); letter-spacing:0.1em; text-transform:uppercase; font-size:10px;">Note ·</strong> Trim availability and option packages move week to week. The fastest way to confirm which trims are physically on our lot today is to check the <a href="https://www.subarudalton.com/2026-subaru-outback-san-diego">current new inventory</a> at subarudalton.com or reach the team through the official <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a>. <em>Reviewed and posted by the Dalton Subaru National City Team.</em></p>
+        <p style="font-size:12px; color:var(--muted); letter-spacing:0.02em; line-height:1.6; border-top:1px solid var(--rule-soft); padding-top:18px; margin-top:24px;"><strong style="color:var(--ink-soft); letter-spacing:0.1em; text-transform:uppercase; font-size:10px;">Note ·</strong> Trim availability and option packages move week to week. Confirm what's on the lot today via the <a href="https://www.subarudalton.com/2026-subaru-outback-san-diego">current new inventory</a> or the <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a>. <em>Reviewed and posted by the Dalton Subaru National City Team.</em></p>
       </section>
 
       <!-- §02 How the two trims compare -->
@@ -1353,6 +1348,7 @@
         <!-- Desktop: Premium vs Limited comparison table -->
         <div class="cross-table">
           <table>
+            <colgroup><col><col class="compare"><col class="compare"></colgroup>
             <thead>
               <tr>
                 <th><span class="visually-hidden">Comparison</span></th>
@@ -1369,17 +1365,17 @@
             </thead>
             <tbody>
               <tr>
-                <th>Position in lineup</th>
+                <th>Trim position</th>
                 <td data-label="Premium">Value mid trim</td>
                 <td class="featured" data-label="Limited">Upper comfort trim</td>
               </tr>
               <tr>
                 <th>Seat material</th>
                 <td data-label="Premium">StarTex® upholstery</td>
-                <td class="featured" data-label="Limited">Leather-trimmed upholstery</td>
+                <td class="featured" data-label="Limited">Leather-trimmed</td>
               </tr>
               <tr>
-                <th>Convenience tech</th>
+                <th>Tech content</th>
                 <td data-label="Premium">Core set</td>
                 <td class="featured" data-label="Limited">Expanded set</td>
               </tr>
@@ -1391,7 +1387,7 @@
               <tr>
                 <th>Interior finish</th>
                 <td data-label="Premium">Practical</td>
-                <td class="featured" data-label="Limited">More finished, quieter feel</td>
+                <td class="featured" data-label="Limited">More finished, quieter</td>
               </tr>
               <tr>
                 <th>All-wheel drive</th>
@@ -1416,7 +1412,7 @@
             </div>
             <dl class="cross-card__specs">
               <div class="cross-card__row"><dt>Seat material</dt><dd>StarTex® upholstery</dd></div>
-              <div class="cross-card__row"><dt>Convenience tech</dt><dd>Core set</dd></div>
+              <div class="cross-card__row"><dt>Tech content</dt><dd>Core set</dd></div>
               <div class="cross-card__row"><dt>Safety content</dt><dd>Strong baseline</dd></div>
               <div class="cross-card__row"><dt>Interior finish</dt><dd>Practical</dd></div>
               <div class="cross-card__row"><dt>All-wheel drive</dt><dd>Standard</dd></div>
@@ -1430,10 +1426,10 @@
               <span class="cross-card__style">Upper comfort trim</span>
             </div>
             <dl class="cross-card__specs">
-              <div class="cross-card__row"><dt>Seat material</dt><dd>Leather-trimmed upholstery</dd></div>
-              <div class="cross-card__row"><dt>Convenience tech</dt><dd>Expanded set</dd></div>
+              <div class="cross-card__row"><dt>Seat material</dt><dd>Leather-trimmed</dd></div>
+              <div class="cross-card__row"><dt>Tech content</dt><dd>Expanded set</dd></div>
               <div class="cross-card__row"><dt>Safety content</dt><dd>More included as standard</dd></div>
-              <div class="cross-card__row"><dt>Interior finish</dt><dd>More finished, quieter feel</dd></div>
+              <div class="cross-card__row"><dt>Interior finish</dt><dd>More finished, quieter</dd></div>
               <div class="cross-card__row"><dt>All-wheel drive</dt><dd>Standard</dd></div>
               <div class="cross-card__row"><dt>Typical buyer</dt><dd>Comfort-led, tech-led</dd></div>
             </dl>
@@ -1460,7 +1456,7 @@
       <section class="s" id="choose-premium">
         <div class="section-num"><span>03</span><span>The value pick</span></div>
         <h2 class="section-h">Who should choose <em>Premium</em>.</h2>
-        <p class="lede">Premium is the trim most cross-shoppers land on when budget leads the decision. You keep all-wheel drive, the EyeSight suite, and the usable cargo area that makes the Outback an Outback. You give up leather and some of the convenience extras that come standard higher up.</p>
+        <p class="lede">Premium is where most cross-shoppers land when budget leads. You keep all-wheel drive, the EyeSight suite, and the cargo area. You give up leather and some convenience extras.</p>
 
         <p>Premium suits a commuter, a weekend trail-and-camp driver, or a family that wants Subaru capability without paying for the top comfort tier. It is the practical pick.</p>
       </section>
@@ -1469,7 +1465,7 @@
       <section class="s" id="choose-limited">
         <div class="section-num"><span>04</span><span>The comfort pick</span></div>
         <h2 class="section-h">Who should choose <em>Limited</em>.</h2>
-        <p class="lede">Limited is for the shopper who spends real time in the seat. Leather-trimmed upholstery, more standard convenience features, and a more isolated cabin make a difference on a long National City to Los Angeles run. If you keep your vehicle eight or ten years, the comfort content earns its place.</p>
+        <p class="lede">Limited is for the shopper who spends real time in the seat. Leather trim and a more isolated cabin matter on a long run to Los Angeles. Keep the car eight or ten years and that content earns its place.</p>
 
         <p>Limited also tends to hold a cleaner used-market story because of the higher standard content. For resale value framing on either trim, compare data at <a href="https://www.kbb.com/subaru/" rel="noopener">kbb.com</a>.</p>
       </section>
@@ -1480,13 +1476,13 @@
         <h3 id="cta-inline-heading">Walk both Outback trims side by side on the Mile of Cars.</h3>
         <p class="lede">Come in and we'll park a Premium next to a Limited, pull the standard-equipment sheets for both, and run the trim walk out loud. Ask for that comparison when you reach out.</p>
         <div class="actions">
-          <a class="btn primary" href="https://www.subarudalton.com/2026-subaru-outback-san-diego">Browse new Outback inventory <span class="arrow">→</span></a>
+          <a class="btn primary" href="https://www.subarudalton.com/2026-subaru-outback-san-diego">View new Outback inventory <span class="arrow">→</span></a>
           <a class="btn ghost" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a>
         </div>
         <div class="meta">
           <div class="meta-item"><span class="k">Address</span><span class="v">2829 National City Blvd, National City CA</span></div>
           <div class="meta-item"><span class="k">Contact</span><span class="v"><a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a></span></div>
-          <div class="meta-item"><span class="k">Reviews</span><span class="v"><a class="tel" href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener">4.7 ★ · 4,460 Google</a></span></div>
+          <div class="meta-item"><span class="k">Reviews</span><span class="v"><a class="tel" href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener">4.7 ★ · 4,480 Google</a></span></div>
           <div class="meta-item"><span class="k">Hours</span><span class="v">Mon-Sat 8:30-8 · Sun 10-6</span></div>
         </div>
       </aside>
@@ -1495,7 +1491,7 @@
       <section class="s" id="on-the-lot">
         <div class="section-num"><span>05</span><span>From the trim walk</span></div>
         <h2 class="section-h">What we see <em>on the lot</em>.</h2>
-        <p class="lede">Our sales team walked both trims side by side on the showroom floor this quarter and confirmed the difference most shoppers feel first is the seat. We pulled a Premium and a Limited next to each other, inspected the upholstery and the door trim, and verified that the Limited cabin reads quieter and more finished even before a test drive.</p>
+        <p class="lede">Our sales team walked both trims side by side on the floor this quarter. The difference shoppers feel first is the seat. Inspecting the upholstery and door trim, the Limited cabin reads quieter even before a test drive.</p>
 
         <p>Our team also checked the standard-equipment sheets against the current Subaru order guide so we were not quoting last year's content.</p>
 
@@ -1505,18 +1501,18 @@
           Most buyers assume the bigger jump is Premium to Limited. In practice, the larger feel-and-finish step for many shoppers is base to Premium.
         </blockquote>
 
-        <p>Here is the contrarian part. Premium adds the everyday-usable content over the base trim, so base to Premium is the step that changes daily life. Premium to Limited is more about comfort and material than capability. We say that out loud because it changes which trim is the right value for you.</p>
+        <p>Here is the contrarian part. Premium adds the everyday-usable content over the base trim, so base to Premium is the step that changes daily life. Premium to Limited is more about comfort than capability, which changes which trim is the right value for you.</p>
 
-        <p>As of June 2026, both the 2026 Subaru Outback Premium and the 2026 Subaru Outback Limited are trims we stock and order. Availability of specific colors and option packages moves week to week, so reach the team through the official <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a> to confirm what is on the ground before you drive over.</p>
+        <p>As of July 2026, we stock and order both the Outback Premium and Limited. Colors and option packages move week to week, so confirm what's on the ground through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a> before you drive over.</p>
 
-        <p>We are rated <a href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener">4.7 stars across 4,460 Google reviews</a>, and a recurring theme is that the team explains trim differences plainly instead of pushing up the ladder. That is how we run a trim walk. We won't paraphrase what customers say; the rating is public, current, and not something we can edit.</p>
+        <p>We are rated <a href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener">4.7 stars across 4,480 Google reviews</a>, and a recurring theme is that the team explains trim differences plainly instead of pushing up the ladder. That is how we run a trim walk. We won't paraphrase what customers say; the rating is public, current, and not something we can edit.</p>
       </section>
 
       <!-- §06 Premium vs Limited vs the rest of the lineup -->
       <section class="s" id="lineup">
         <div class="section-num"><span>06</span><span>The trim ladder</span></div>
         <h2 class="section-h">Premium vs Limited vs <em>the rest of the lineup</em>.</h2>
-        <p class="lede">Premium and Limited are two rungs. Above Limited sits Touring, which layers on more premium finish. There are also performance-oriented and rugged variants depending on model year. Here's where the two trims on this page sit on the ladder.</p>
+        <p class="lede">Premium and Limited are two rungs, with Touring above Limited adding more finish. Performance and rugged variants exist depending on model year. Here's where these two sit.</p>
 
         <div class="trims">
           <article class="trim">
@@ -1541,17 +1537,17 @@
           </article>
         </div>
 
-        <p>For the official, current lineup and any new-for-2026 equipment, the manufacturer source is <a href="https://www.subaru.com" rel="noopener">subaru.com</a>. For independent third-party ranking of trims and value, <a href="https://www.consumerreports.org" rel="noopener">consumerreports.org</a> rates Subaru highly for reliability and resale, and <a href="https://www.kbb.com/subaru/" rel="noopener">kbb.com</a> tracks ownership value. We attribute those judgments to the third parties rather than claim them ourselves. If you want the full lineup spread, our other Outback trim comparisons cover Premium, Limited, Touring, and Sport against each other.</p>
+        <p>For the official 2026 lineup and equipment, the manufacturer source is <a href="https://www.subaru.com" rel="noopener">subaru.com</a>. For independent rankings, <a href="https://www.consumerreports.org" rel="noopener">consumerreports.org</a> rates Subaru highly for reliability and resale, and <a href="https://www.kbb.com/subaru/" rel="noopener">kbb.com</a> tracks ownership value. Our other Outback comparisons cover Premium, Limited, Touring, and Sport.</p>
       </section>
 
       <!-- §07 How to decide today -->
       <section class="s" id="decide">
         <div class="section-num"><span>07</span><span>Deciding at Dalton</span></div>
         <h2 class="section-h">How to <em>decide today</em>.</h2>
-        <p class="lede">Drive both. The seat, the cabin noise, and the standard tech are easier to judge from the driver's seat than from a spec table. We are at <strong>2829 National City Blvd, National City, CA 91950</strong>, on the National City Mile of Cars, serving National City, Chula Vista, and San Diego County.</p>
+        <p class="lede">Drive both. Seat, cabin noise, and standard tech are easier to judge from the driver's seat than a spec table. We are at <strong>2829 National City Blvd, National City, CA 91950</strong>, on the Mile of Cars.</p>
 
         <div class="spec-strip stats">
-          <div class="item"><a class="tel" href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener"><div class="num">4.7<small> ★</small></div><div class="lbl">4,460 Google reviews</div></a></div>
+          <div class="item"><a class="tel" href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener"><div class="num">4.7<small> ★</small></div><div class="lbl">4,480 Google reviews</div></a></div>
           <div class="item"><div class="num">2<small> trims</small></div><div class="lbl">Premium &amp; Limited side by side</div></div>
           <div class="item"><div class="num">AWD</div><div class="lbl">Standard on both trims</div></div>
           <div class="item"><div class="num">Love</div><div class="lbl">Subaru Love Promise</div></div>
@@ -1566,13 +1562,13 @@
 
         <h3>How to get started</h3>
         <ul class="bullets">
-          <li><strong>Browse the current new inventory</strong> at <a href="https://www.subarudalton.com/2026-subaru-outback-san-diego" rel="noopener">subarudalton.com</a> to see which Outback trims are on the ground</li>
+          <li><strong>View the current new inventory</strong> at <a href="https://www.subarudalton.com/2026-subaru-outback-san-diego" rel="noopener">subarudalton.com</a> to see which Outback trims are on the ground</li>
           <li><strong>Check the used inventory</strong> at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com</a> if a pre-owned Outback fits better</li>
           <li><strong>Visit the showroom</strong> at 2829 National City Blvd, National City, CA 91950, on the Mile of Cars</li>
           <li><strong>Reach out</strong> through the official <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a> for financing, service scheduling, or to confirm a specific trim is in stock</li>
         </ul>
 
-        <p>Sales is open Monday through Saturday, 8:30 AM to 8:00 PM, and Sunday from 10:00 AM to 6:00 PM, so a Premium vs Limited trim walk fits a work week or a weekend just as easily. Our address is 2829 National City Blvd, National City, CA 91950, and you can reach the team through the official <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a>.</p>
+        <p>Sales is open Mon&ndash;Sat 8:30 AM to 8:00 PM and Sunday 10:00 AM to 6:00 PM, so a trim walk fits a weekday or a weekend. We're at 2829 National City Blvd, National City, CA 91950, or reach us through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a>.</p>
       </section>
     </div>
 
@@ -1582,7 +1578,7 @@
         <div class="lbl">Google rating</div>
         <a class="tel" href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener"><div class="stars">★★★★★</div>
         <strong style="font-size:28px;">4.7</strong>
-        <div class="sub">Across 4,460 customer reviews</div></a>
+        <div class="sub">Across 4,480 customer reviews</div></a>
       </div>
       <div class="chip">
         <div class="lbl">Contact</div>
@@ -1613,7 +1609,7 @@
     <div class="trust-grid">
       <div class="item">
         <a class="tel" href="https://www.google.com/search?q=dalton+subaru&amp;oq=dalton+subaru&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjM1NWowajeoAgCwAgA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8#lrd=0x80d95212f409b72d:0xd568cfc83045d35,1,,,," target="_blank" rel="noopener"><div class="num">4.7<small> ★</small></div>
-        <div class="lbl">Google rating across<br>4,460 reviews</div></a>
+        <div class="lbl">Google rating across<br>4,480 reviews</div></a>
       </div>
       <div class="item">
         <div class="num">AWD</div>
@@ -1640,7 +1636,7 @@
         <h5>Premium vs Limited at our store</h5>
         <p>Premium is the value-focused mid trim with StarTex® upholstery and core driver tech. Limited adds leather-trimmed upholstery, more standard convenience and safety features, and a quieter, more finished cabin.</p>
         <p>Both share Subaru Symmetrical All-Wheel Drive and the EyeSight Driver Assist suite on current Outback models. The gap is content and finish, not capability.</p>
-        <p>As of June 2026, both trims are ones we stock and order, with colors and packages moving week to week.</p>
+        <p>As of July 2026, both trims are ones we stock and order, with colors and packages moving week to week.</p>
       </div>
       <div>
         <h5>Hours &amp; contact</h5>
@@ -1729,7 +1725,7 @@
       </div>
       <div class="chip">
         <div class="lbl">New inventory</div>
-        <a class="tel" href="https://www.subarudalton.com/2026-subaru-outback-san-diego" rel="noopener"><strong style="font-family:var(--display); font-size:18px; line-height:1.2;">Browse new Outbacks</strong></a>
+        <a class="tel" href="https://www.subarudalton.com/2026-subaru-outback-san-diego" rel="noopener"><strong style="font-family:var(--display); font-size:18px; line-height:1.2;">View new Outbacks</strong></a>
         <div class="sub">See which Premium &amp; Limited units are on the ground</div>
       </div>
       <div class="chip">
@@ -1763,9 +1759,15 @@
           <div style="font-size:12px; color:var(--muted); margin-top:10px; letter-spacing:0.04em;">Dalton Subaru National City · 2829 National City Blvd, National City, CA 91950</div>
         </div>
 
-        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">Exact horsepower, fuel economy, towing, and current model-year equipment for the 2026 Outback Premium and Limited are published by Subaru of America at subaru.com and should be confirmed there; EPA fuel-economy estimates are at fueleconomy.gov. Equipment shifts by model year, and current pricing, lease terms, and any APR or down-payment offers are offer terms that change and should be re-verified before any deal is signed. For current offers on either trim, reach Sales through the official <a class="tel" href="https://www.subarudalton.com/contactus.aspx"><strong>Dalton Subaru Contact Portal</strong></a>.</p>
+        <ul class="bullets" style="font-size:15px; color:var(--ink-soft); max-width:660px;">
+          <li><strong>Specs &amp; equipment.</strong> Horsepower, towing, and model-year equipment for the Outback Premium and Limited are published by Subaru of America at subaru.com.</li>
+          <li><strong>Fuel economy.</strong> EPA estimates are at fueleconomy.gov.</li>
+          <li><strong>Pricing &amp; offers.</strong> Prices, lease terms, and APR or down-payment offers change and should be re-verified before signing.</li>
+        </ul>
 
-        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;"><em>If a question about the Subaru Outback Premium vs Limited at Dalton Subaru National City is not answered here, reach a sales advisor through the official <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a>, or browse current new inventory at <a href="https://www.subarudalton.com/2026-subaru-outback-san-diego" rel="noopener">subarudalton.com</a>.</em></p>
+        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">For current offers on either trim, reach Sales through the official <a class="tel" href="https://www.subarudalton.com/contactus.aspx"><strong>Dalton Subaru Contact Portal</strong></a>.</p>
+
+        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;"><em>If a question about the Subaru Outback Premium vs Limited at Dalton Subaru National City is not answered here, reach a sales advisor through the official <a class="tel" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a>, or view current new inventory at <a href="https://www.subarudalton.com/2026-subaru-outback-san-diego" rel="noopener">subarudalton.com</a>.</em></p>
 
         <ul class="ext">
           <li><a href="https://www.subaru.com" rel="noopener" target="_blank">Subaru of America · official Outback lineup, trim equipment, and new-for-2026 content</a></li>
@@ -1786,7 +1788,7 @@
     <h2>Premium or <em>Limited</em>? Drive both and decide.</h2>
     <p>The seat, the cabin noise, and the standard tech are easier to judge from the driver's seat than from a spec table. Visit Dalton Subaru National City at 2829 National City Blvd and we'll walk both trims with you, plainly.</p>
     <div class="actions">
-      <a class="btn primary" href="https://www.subarudalton.com/2026-subaru-outback-san-diego">Browse new Outback inventory <span class="arrow">→</span></a>
+      <a class="btn primary" href="https://www.subarudalton.com/2026-subaru-outback-san-diego">View new Outback inventory <span class="arrow">→</span></a>
       <a class="btn ghost" href="https://www.subarudalton.com/contactus.aspx">Dalton Subaru Contact Portal</a>
       <a class="btn ghost" href="https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x80d952125112d925:0xaf395218d244e259!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF" rel="noopener">Get Direction</a>
     </div>
